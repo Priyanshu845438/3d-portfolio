@@ -1,0 +1,229 @@
+/* ---- Matches portfolio design language: dark bg, Geist font, teal accents, gradient headings ---- */
+
+.venture-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    margin: 60px auto 0;
+}
+
+.venture-container {
+    width: var(--cWidth);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.venture-container .section-heading {
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+
+.venture-body {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* LEFT column */
+.venture-info {
+    flex: 1;
+}
+
+.venture-category {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accentColor);
+    margin: 0 0 20px 0;
+    font-weight: 500;
+}
+
+.venture-status {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4ade80;
+    letter-spacing: 0.5px;
+    margin: 0 0 14px 0;
+}
+
+.venture-desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #d1d5db;
+    margin: 0 0 30px 0;
+    max-width: 480px;
+}
+
+.venture-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.venture-tags span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accentColor);
+    border: 1px solid rgba(15, 23, 42, 0.3);
+    padding: 5px 14px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    background: rgba(15, 23, 42, 0.04);
+}
+
+.venture-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(94, 234, 212, 0.15), rgba(94, 234, 212, 0.05));
+    border: 1px solid var(--accentColor);
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(20, 184, 166, 0.15);
+}
+
+.venture-link:hover {
+    background: linear-gradient(135deg, rgba(94, 234, 212, 0.25), rgba(94, 234, 212, 0.1));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(20, 184, 166, 0.25);
+}
+
+/* RIGHT column — visual */
+.venture-visual {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 320px;
+}
+
+/* ── Venture Character isolated Frame ── */
+.venture-character-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+.venture-video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 900px) {
+    .venture-character-container {
+        height: 380px;
+    }
+
+    .venture-character {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .venture-character-container {
+        height: 320px;
+    }
+
+    .venture-character {
+        width: 280px;
+    }
+}
+
+/* Responsive */
+@media only screen and (max-width: 1025px) {
+    .venture-heading {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .venture-body {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .venture-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .venture-info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .venture-tags {
+        justify-content: center;
+    }
+
+    .venture-ring {
+        width: 300px;
+        height: 300px;
+    }
+
+    .venture-ring-2 {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .venture-heading {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    .venture-card {
+        width: 260px;
+    }
+
+    .review-bubble {
+        display: none;
+    }
+}
+
+.venture-divider {
+    width: 100%;
+    margin-top: 80px;
+    border-bottom: 1px dashed rgb(213, 213, 213);
+}
+
+@media only screen and (max-width: 900px) {
+    .venture-divider {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .venture-divider {
+        margin-top: 40px;
+    }
+}

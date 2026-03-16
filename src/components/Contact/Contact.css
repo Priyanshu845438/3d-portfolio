@@ -1,0 +1,224 @@
+/* Contact Section — matches portfolio dark theme with the screenshot layout */
+
+.contact-section {
+  margin: auto;
+  padding-bottom: 120px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 2;
+  background-color: var(--backgroundColor);
+}
+
+.contact-container {
+  width: var(--cWidth);
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* ─────────────── LEFT ─────────────── */
+.contact-left {
+  flex: 1;
+  max-width: 420px;
+}
+
+.contact-status-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.contact-available {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.08);
+  border: 1px solid rgba(74, 222, 128, 0.25);
+  padding: 6px 14px;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+}
+
+.contact-dot {
+  width: 7px;
+  height: 7px;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: dotPulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 6px #4ade80;
+}
+
+@keyframes dotPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.4);
+    opacity: 0.7;
+  }
+}
+
+.contact-connect-btn {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--textColor);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.contact-connect-btn:hover {
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+}
+
+
+
+.contact-divider {
+  width: 45px;
+  height: 3px;
+  background: var(--accentColor);
+  border-radius: 2px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(15, 23, 42, 0.4);
+}
+
+.contact-desc {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* ─────────────── RIGHT ─────────────── */
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 10px;
+}
+
+/* Each contact card */
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: rgba(12, 18, 37, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 18px 22px;
+  text-decoration: none;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  backdrop-filter: blur(6px);
+}
+
+.contact-card:hover {
+  border-color: rgba(15, 23, 42, 0.3);
+  transform: translateX(4px);
+  box-shadow: 0 0 20px rgba(15, 23, 42, 0.05);
+}
+
+/* Icon circles */
+.contact-card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.email-icon {
+  background: rgba(37, 99, 235, 0.2);
+  color: #60a5fa;
+}
+
+.linkedin-icon {
+  background: rgba(10, 102, 194, 0.2);
+  color: #60a5fa;
+}
+
+.whatsapp-icon {
+  background: rgba(37, 211, 102, 0.15);
+  color: #4ade80;
+}
+
+.github-icon {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+}
+
+.contact-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-card-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.contact-card-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f1f5f9;
+  letter-spacing: 0.2px;
+}
+
+/* ─────────────── Responsive ─────────────── */
+@media only screen and (max-width: 1025px) {
+
+
+  .contact-container {
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-left {
+    max-width: 100%;
+  }
+
+  .contact-section {
+    margin-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .contact-card {
+    padding: 14px 16px;
+  }
+
+  .contact-card-value {
+    font-size: 13px;
+  }
+}
