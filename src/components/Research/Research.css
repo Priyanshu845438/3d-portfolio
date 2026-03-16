@@ -222,6 +222,8 @@
     .research-heading {
         font-size: 40px;
         line-height: 42px;
+        opacity: 1 !important;
+        transform: none !important;
     }
 
     .research-title {
@@ -230,5 +232,7 @@
 
     .research-card {
         padding: 24px 20px;
+        opacity: 1 !important;
+        transform: none !important;
     }
 }
