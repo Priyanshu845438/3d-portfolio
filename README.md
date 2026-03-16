@@ -1,4 +1,4 @@
-# 3D Interactive Portfolio — Priyanshu Raj 🚀
+# 3D Interactive Portfolio | Priyanshu Raj 🚀
 
 A high-performance, responsive 3D interactive portfolio website featuring continuous rigid physics simulations, fluid glassmorphisms, and smooth scrolling interactions. 
 
