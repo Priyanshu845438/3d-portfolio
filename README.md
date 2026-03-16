@@ -27,6 +27,11 @@ A high-performance, responsive 3D interactive portfolio website featuring contin
 - **Glassmorphic Grids Frames**: Transparent blur frameworks layout across sections balancing light gradients natively.
 - **Continuous Lenis Native Scrolls**: Fully compatible seamless coordinate buffers satisfying desktop requirements accurately.
 
+## 🌐 Live Portfolio
+<a href="https://i-priyanshu.netlify.app/" target="_blank">
+  <button>Visit My Portfolio</button>
+</a>
+
 ## 🚀 Usage & Setup
 1. **Clone the Repo**
 2. **Install Dependencies**: `npm install`
