@@ -28,7 +28,7 @@ A high-performance, responsive 3D interactive portfolio website featuring contin
 - **Continuous Lenis Native Scrolls**: Fully compatible seamless coordinate buffers satisfying desktop requirements accurately.
 
 ## 🌐 Live Portfolio
-<a href="https://i-priyanshu.netlify.app/" target="_blank">
+<a href="https://i-priyanshu.netlify.app/" target="_blank" rel="noopener noreferrer">
   <button>Visit My Portfolio</button>
 </a>
 
