@@ -192,10 +192,11 @@ const TechStack = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = document
-        .getElementById("work")!
-        .getBoundingClientRect().top;
-      setIsActive(scrollY > threshold);
+      const workElem = document.getElementById("work");
+      if (workElem) {
+        const threshold = workElem.getBoundingClientRect().top;
+        setIsActive(scrollY > threshold);
+      }
     };
     document.querySelectorAll(".header a").forEach((elem) => {
       const element = elem as HTMLAnchorElement;
@@ -227,7 +228,7 @@ const TechStack = () => {
   }, []);
 
   return (
-    <div className="techstack" style={{ position: "relative", zIndex: 3 }}>
+    <div className="techstack" id="skills" style={{ position: "relative", zIndex: 3 }}>
       <h2 style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 0, opacity: 0.15, pointerEvents: "none", fontSize: "clamp(3rem, 10vw, 150px)", textAlign: "center", width: "100%", textTransform: "uppercase", letterSpacing: "5px", color: "white", fontWeight: "900", whiteSpace: "nowrap" }}>
         MY TECHSTACK
       </h2>
